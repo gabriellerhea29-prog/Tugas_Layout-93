@@ -1,0 +1,20 @@
+table, th, td{
+    border:1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: mistyrose;
+}
+th, td{
+    padding: 5px;
+}
+tr{
+    background-color: yellow(156, 235, 186);
+}
+tr:nth-child(even){
+    background-color: lightyellow;
+}
+tr:hover{
+    background-color: pink;
+}
