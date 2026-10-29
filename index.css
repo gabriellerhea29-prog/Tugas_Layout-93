@@ -1,0 +1,137 @@
+.heading {
+    background-color: pink;
+    color: darkred;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid hotpink;
+    border-radius: 15px;
+    width: 60%;
+    margin: 20px auto;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* style pada header */
+.header{
+    background-color: lightcyan;
+    padding: 20px;
+    text-align: center;
+}
+/* style pada topnac */
+.topnav{
+    overflow: hidden;
+    background-color: rgb(200, 227, 252);
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: aquamarine;
+    color:brown;
+}
+.footer{
+    background-color: lightcyan;
+    padding: 15px;
+    text-align: center;
+}
+/* style table */
+table, th, td{
+    border: 1px solid black;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+     width: 100%;
+    }
+th, td{
+    padding: 5px;
+}
+th{
+    background-color: mistyrose;
+}
+tr{
+    background-color: pink;
+}
+tr:nth-child(even){
+    background-color: honeydew;
+}
+tr:hover{
+    background-color: salmon;
+}
+
+/* Style pada List */
+/* ol{
+    list-style-type: lower-alpha;
+}
+ul{
+    list-style-type: square;
+}
+    */
+
+ol.buah {
+    background: #b689f4;
+    padding: 20px;
+}
+
+ol.buah li {
+    background: #fffcb0;
+    color: darkgreen;
+    padding: 5px;
+    border: 2px solid greenyellow;
+    margin: 5px 0 5px 35px;
+}
+
+ol.buah li.apel {
+    background: #f7627b;
+    color: darkred;
+}
+
+ol.lorem {
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol.lorem li {
+    background: #cce5ff;
+    color: darkblue;
+    padding: 5px;
+    border: 2px solid rgb(11, 27, 78);
+    margin: 5px 0 5px 35px;
+}
+
+.icons svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+ul.icons {
+    background: #a3fba3;
+    padding: 20px;
+}
+
+ul.icons li {
+    background: #e8ffe8;
+    color: rgb(9, 81, 9);
+    margin: 5px;
+    padding: 8px;
+    border: 2px solid rgb(63, 99, 49);
+}
+
+.icons i {
+    font-size: 20px;
+    margin-right: 8px;
+}

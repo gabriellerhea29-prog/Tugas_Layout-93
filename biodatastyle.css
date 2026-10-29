@@ -1,0 +1,703 @@
+.heading {
+    background-color: pink;
+    color: darkred;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid hotpink;
+    border-radius: 15px;
+    width: 60%;
+    margin: 20px auto;
+}
+body{
+    background-image: url("backgroundpink.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    background-color: rgb(255, 233, 255);
+    color: rgb(209, 83, 209);
+    text-align: center;
+    font-family: "singlove";
+}
+/* format font : .otf/.ttf*/
+@font-face {
+    font-family: "singlove";
+    src: url("singlove/Singlove.otf");
+}
+h1{
+    background-color: rgb(219, 201, 255);
+    color: mistyrose (52, 16, 233);
+    text-align: center ;
+    width: 600px;
+}
+div.biodata{
+    margin: 30px auto; 
+    width: 70%;
+    background-color:lightpink;
+    color: darkorchid;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid purple;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: tranform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.Buku{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.One{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.One:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.One:hover::after {
+    content: "👀Plot twist";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+div.The{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image:url(bluebackground.jpg);
+}
+div.The:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.The:hover::after {
+    content: "📖 A must-read!";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px gray;
+    font-size: 14px;
+}
+div.Percy{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Percy:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Percy:hover::after {
+    content: "⭐ 10/10";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+div.Maze{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(green\ background.jpg);
+}
+div.Maze:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Maze:hover::after {
+    content: "📚 Would read again!";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px gray;
+    font-size: 14px;
+}
+div.Makanan{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.Carbonara{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(yellow.jpg);
+}
+div.Carbonara:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Carbonara:hover::after {
+    content: "⭐";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Nasi{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Nasi:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Nasi:hover::after {
+    content: "😋";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Sushi{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(salmon\ bg.jpg);
+}
+div.Sushi:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Sushi:hover::after {
+    content: "🍣";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Salmon{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Salmon:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Salmon:hover::after {
+    content: "🤤";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Minuman{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.Coffee{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Coffee:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Coffee:hover::after {
+    content: "✨ My favorite! ";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+div.Milkshake{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(polka\ dot.jpg);
+}
+div.Milkshake:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Milkshake:hover::after {
+    content: "❤️ Yummy! ";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+div.Water{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Water:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Water:hover::after {
+    content: "💧Refreshing! ";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+div.Orange{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(orange.jpg);
+}
+div.Orange:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Orange:hover::after {
+    content: "🔥So good! ";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+div.Lagu{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.Maggots{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(blue\ olivia.jpg);
+    transition: transform 0.3s ease;
+}
+div.Maggots:hover{
+    transform: scale(1.1)
+}
+/* Audio player for Maggots for Brains */
+
+div.Maggots audio{
+
+    width: 210px;
+
+}
+div.Close{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Close:hover{
+    transform: scale(1.1)
+}
+/* Audio player for Close To You */
+
+div.Close audio{
+
+    width: 210px;
+
+}
+div.Blue{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(beach.jpg);
+}
+div.Blue:hover{
+    transform: scale(1.1)
+}
+/* Audio player for Blue */
+
+div.Blue audio{
+
+    width: 210px;
+
+}
+div.Number{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Number:hover{
+    transform: scale(1.1)
+}
+/* Audio player for Number One Girl */
+
+div.Number audio{
+
+    width: 210px;
+
+}
+div.Hobi{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.Read{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Read:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Read:hover::after {
+    content: "📚☕";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Listening{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(white.jpg);
+}
+div.Listening:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Listening:hover::after {
+    content: "🎧";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Draw{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Draw:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Draw:hover::after {
+    content: "✍";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Watching{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(stars.jpg);
+}
+div.Watching:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Watching:hover::after {
+    content: "📺";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+div.Movie{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.Weak{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(blue\ weak\ hero.jpg);
+}
+div.Weak:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Weak span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+div.Weak:hover {
+    transform: scale(1.08);
+}
+
+div.Weak:hover span {
+    opacity: 1;
+}
+div.pjo{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.pjo:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.pjo span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+div.pjo:hover {
+    transform: scale(1.08);
+}
+
+div.pjo:hover span {
+    opacity: 1;
+}
+div.Big{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+    background-image: url(red.png);
+}
+div.Big:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Big span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+div.Big:hover {
+    transform: scale(1.08);
+}
+
+div.Big:hover span {
+    opacity: 1;
+}
+div.Spider{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    margin-bottom: 25px;
+}
+div.Spider:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1)
+}
+div.Spider span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+div.Spider:hover {
+    transform: scale(1.08);
+}
+div.Spider:hover span {
+    opacity: 1;
+}
+
+
+.merge {
+    width: 450px;
+    height: 450px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: blue;
+}
+
+.merge th {
+    border: 5px solid red;
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.merge th:hover {
+    background-color: aqua;
+    color: blue;
+    cursor: pointer;
+}

@@ -1,13 +1,34 @@
+.heading {
+    background-color: pink;
+    color: darkred;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid hotpink;
+    border-radius: 15px;
+    width: 60%;
+    margin: 20px auto;
+}
 body{
     background-image: url("backgroundpink.jpg");
     background-size: cover;
     background-position: center;
 }
-h1{
-    background-color: rgb(173, 255, 203);
-    color: rgb(111, 155, 243);
+.heading {
+    font-size: 32px;
     text-align: center;
-    font-family: "bingboss";
+}
+
+.title {
+    font-size: 55px;
+    text-align: center;
+    color: rgb(0, 83, 18);
+    transition: 0.3s;
+    margin: 20px auto;
+}
+
+.title:hover {
+    color: #4b9279;
+    transform: scale(1.08);
 }
 
 @font-face {
@@ -16,33 +37,30 @@ h1{
 }
 header {
     text-align: center;
-    padding: 70px 20px;
+    padding: 80px 20px;
 
     background-image: linear-gradient(
         rgba(10, 60, 60, 0.65),
         rgba(10, 60, 60, 0.65)
     ),
     url("plastic\ bg.jpg");
-      background-size: cover;
+    background-size: cover;
     background-position: center;
 
     color: white;
 }
+
 .small-title {
     letter-spacing: 4px;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
-h1 {
+.title {
     font-size: 55px;
     transition: 0.3s;
 }
 
-h1:hover {
-    color: #4b9279;
-    transform: scale(1.08);
-}
 
 body {
     background-color: #ddfdff;
